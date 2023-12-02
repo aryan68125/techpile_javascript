@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="get_element.js"></script>
+    </head>
+    <body>
+        <h1>How to set the color of a para on click</h1>
+        <p id="para" onclick="set_style()">Html , css and javascript</p>
+
+        <!-- <h1>how to change style of the image tag on button click</h1>
+        <img src = "../images/battlefield.jpg" id="img1"/>
+        <button onclick="set_image_style()">apply style</button> -->
+
+        <h1>how to change style of the image tag on button double click</h1>
+        <img src = "../images/battlefield.jpg" id="img1"/>
+        <button ondblclick="set_image_style()">apply style</button>
+        
+        
+        <h1>Set the style of h1 tag </h1>
+        <ul>
+            <li>color : red</li>
+            <li>background : green</li>
+            <li>padding : 50px</li>
+            <li>text-align:center</li>
+            <li>text-shadow : 10px 10px 2px black</li>
+            <li>font-size: 100px;</li>
+        </ul>
+        <h1 id="heading1">Techpile Technologies</h1> <br/>
+        <button onclick="set_heading_style()">change_Style</button>
+
+        <h1>How to get the values entered by the user in the form control elements like 
+            <br/>
+            text box, text area, check box, radio button
+        </h1>
+        <input type="text" id = "text1"/>
+        <button onclick="get_value_text_box()">Get value</button>
+
+        <h1>How to get the values entered by the user in the form control elements like 
+            <br/>
+            text box, text area, check box, radio button
+            and set that value in the textarea or text box.
+        </h1>
+        <input type="text" id = "text2"/>
+        <input type="text" id="text3"/>
+        <button onclick="set_value_text_box()">set value</button>
+
+        <h1 onclick="write_function()">How to use a write function</h1>
+
+        <h1 id="heading2">How to get the text in the h1 tag and show it in the alert box</h1> <br/>
+        <button onclick="get_text_h1()">Get text from h1 tag</button>
+
+        <h1 >How to get the value inside h1 and print it using write function</h1>
+        <h1 id = "heading3">Hello from MARS Say's Elon Musks</h1>
+        <span id="msg"></span>
+        <button onclick="get_set_value_inner()">set value</button>
+<br/><br/><br/><br/><br/>
+        <div>
+            <input type="text" id="userId1"/> <br/>
+            <span id="msg_user"></span> <br/>
+            <input type="text" id="pass1"/> <br/>
+            <span id = "msg_pass"></span><br/>
+            <button onclick="set_span_value()">set items in span</button>
+        </div>
+    </body>
+</html>
