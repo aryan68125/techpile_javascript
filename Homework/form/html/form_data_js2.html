@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link href="../css/bootstrap/bootstrap.css" rel="stylesheet"/>
+        <link href="../css/fontawesome/all.css" rel="stylesheet"/>
+        <link href="../css/custom/form_data_js2.css" rel="stylesheet"/>
+        <script src="../js/bootstrap_js/bootstrap.js"></script>
+        <script src="../js/fontawesome_js/all.js"></script>
+        <script src="../js/custom_js/form_data_js2.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row form_heading_transform">
+                <div>
+                    <h1 class="form_heading">Online <span>Training</span></h1>
+                    <p>
+                        Free Register yourself for the upcoming training from Home organize by Techpile
+                    </p>
+                </div>
+            </div>
+            <div class="row container form_input_containers">
+
+                <!--Name Starts-->
+                <div class="col-auto custome_input_text mt-2">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-user"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name of Student">
+                    </div>
+                    <div><p id="name_messege"></p></div>
+                  </div>
+                  <!--Name Ends-->
+
+                  <!--Contact Starts-->
+                <div class="col-auto custome_input_text">
+                    <label class="sr-only" for="inlineFormInputGroup2">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-phone"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup2" placeholder="Mobile number">
+                    </div>
+                    <div><p id="mobile_messege"></p></div>
+                  </div>
+                  <!--Contact Ends-->
+
+                <!--Email Starts-->
+                <div class="col-auto custome_input_text">
+                    <label class="sr-only" for="inlineFormInputGroup3">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-envelope"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup3" placeholder="Email">
+                    </div>
+                    <div><p id="email_messege"></p></div>
+                  </div>
+                  <!--Email Ends-->
+
+                 <!--apply_messege Starts-->
+                 <div class="col-auto custome_input_text">
+                    <label class="sr-only" for="inlineFormInputGroup4">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-message"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup4" placeholder="Apply for">
+                    </div>
+                    <div><p id="apply_messege"></p></div>
+                  </div>
+                  <!--apply_messege Ends-->
+
+                <!--training Starts-->
+                <div class="col-auto custome_input_text">
+                    <label class="sr-only" for="inlineFormInputGroup5">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-signal"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup5" placeholder="Training mode">
+                    </div>
+                    <div><p id="training_messege"></p></div>
+                  </div>
+                  <!--training Ends-->
+
+                <!--College Starts-->
+                <div class="col-auto custome_input_text">
+                    <label class="sr-only" for="inlineFormInputGroup6">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text input_text_icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup6" placeholder="College Name">
+                    </div>
+                    <div><p id="college_messege"></p></div>
+                  </div>
+                  <!--College Ends-->
+
+                  <!--Button starts-->
+                  <button class="btn btn-warning mb-2" type="submit" onclick="get_set_value()">Submit form</button>
+                  <!--Button ends-->
+            </div>
+        </div>
+    </body>
+</html>
