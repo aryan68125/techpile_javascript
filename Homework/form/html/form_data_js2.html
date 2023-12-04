@@ -3,11 +3,8 @@
         <link href="../css/bootstrap/bootstrap.css" rel="stylesheet"/>
         <link href="../css/fontawesome/all.css" rel="stylesheet"/>
         <link href="../css/custom/form_data_js2.css" rel="stylesheet"/>
-        <script src="../js/bootstrap_js/bootstrap.js"></script>
         <script src="../js/bootstrap_js/bootstrap.bundle.js"></script>
-        <script src="../js/bootstrap_js/bootstrap.esm.js"></script>
         <script src="../js/fontawesome_js/all.js"></script>
-        <script src="../js/custom_js/form_data_js2.js"></script>
     </head>
     <body>
         <div class="container">
@@ -61,16 +58,28 @@
                   <!--Email Ends-->
 
                  <!--apply_messege Starts-->
-                 <div class="col-auto custome_input_text">
-                    <label class="sr-only" for="inlineFormInputGroup4">Username</label>
+                 <div>
+                  <label class="sr-only" for="inlineFormInputGroup5">Username</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text input_text_icon"><i class="fa-solid fa-message"></i></div>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup4" placeholder="Apply for">
+                    
+                      <!--apply for drop down menu starts-->
+                      <div class="dropdown">
+                        <button class="btn btn-light dropdown_btn_custom dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Apply for
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item Apply_for_items" href="#">Summer Training</a></li>
+                          <li><a class="dropdown-item Apply_for_items" href="#">Apprentiship</a></li>
+                          <li><a class="dropdown-item Apply_for_items" href="#">Industrial Training</a></li>
+                        </ul>
+                      </div>
+                      <!--apply for drop down menu ends-->
                     </div>
                     <div><p id="apply_messege"></p></div>
-                  </div>
+                </div>
                   <!--apply_messege Ends-->
 
                 <!--training Starts-->
@@ -80,7 +89,19 @@
                       <div class="input-group-prepend">
                         <div class="input-group-text input_text_icon"><i class="fa-solid fa-signal"></i></div>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup5" placeholder="Training mode">
+                      
+                      <!--training mode drop down menu starts-->
+                      <div class="dropdown">
+                        <button class="btn btn-light dropdown_btn_custom dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Training mode
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item training_mode_items" href="#">Online</a></li>
+                          <li><a class="dropdown-item training_mode_items" href="#">Offline</a></li>
+                        </ul>
+                      </div>
+                      <!--training mode drop down menu ends-->
+
                     </div>
                     <div><p id="training_messege"></p></div>
                   </div>
@@ -99,10 +120,67 @@
                   </div>
                   <!--College Ends-->
 
+                <!--training session Starts-->
+                <div class="col-auto custome_input_text">
+                  <label class="sr-only" for="inlineFormInputGroup5">Username</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text input_text_icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    </div>
+                    
+                    <!--training session drop down menu starts-->
+                    <div class="dropdown">
+                      <button class="btn btn-light dropdown_btn_custom dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Training Session
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item training_session_items" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item training_session_items" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item training_session_items" href="#">Option 3</a></li>
+                        <li><a class="dropdown-item training_session_items" href="#">Option 4</a></li>
+                        <li><a class="dropdown-item training_session_items" href="#">Option 5</a></li>
+                      </ul>
+                    </div>
+                    <!--training session drop down menu ends-->
+
+                  </div>
+                  <div><p id="training_session_messege"></p></div>
+                </div>
+                <!--training session Ends-->
+
+                <!--select courses Starts-->
+                <div class="col-auto custome_input_text">
+                  <label class="sr-only" for="inlineFormInputGroup5">Username</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text input_text_icon"><i class="fa-solid fa-list"></i></div>
+                    </div>
+                    
+                    <!--select courses drop down menu starts-->
+                    <div class="dropdown">
+                      <button class="btn btn-light dropdown_btn_custom dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Courses
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item Select_Courses_items" href="#">Php</a></li>
+                        <li><a class="dropdown-item Select_Courses_items" href="#">Dot net</a></li>
+                        <li><a class="dropdown-item Select_Courses_items" href="#">Php</a></li>
+                        <li><a class="dropdown-item Select_Courses_items" href="#">AI/ML</a></li>
+                        <li><a class="dropdown-item Select_Courses_items" href="#">Android</a></li>
+                      </ul>
+                    </div>
+                    <!--select courses drop down menu ends-->
+
+                  </div>
+                  <div><p id="Select_Courses_messege"></p></div>
+                </div>
+                <!--select courses Ends-->
+
                   <!--Button starts-->
-                  <button class="btn btn-warning mb-2" type="submit" onclick="get_set_value()">Submit form</button>
+                  <button class="btn btn-warning mb-2 fw-bolder text-light" type="submit" onclick="get_set_value()">Register now</button>
                   <!--Button ends-->
             </div>
         </div>
+        <script src="../js/custom_js/form_data_js2.js"></script>
     </body>
 </html>

@@ -25,3 +25,7 @@
     height:50px;
     background: #E0E0E0;
 }
+.dropdown_btn_custom{
+    height:50px;
+    width:100% !important;
+}
