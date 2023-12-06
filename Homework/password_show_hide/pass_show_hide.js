@@ -2,7 +2,9 @@ function demo()
 {
 var x=document.querySelector("input")
 var y=document.querySelector("img")
+var message = document.querySelector(".messege")
 if(x.value != ""){
+    //TODO --> handle message 
     if(x.type=="password")
     {
     x.type="text"
@@ -15,6 +17,7 @@ if(x.value != ""){
     }
 }
 else{
+    //TODO --> handle message 
     alert("Please enter password and then continue")
 }
 }
