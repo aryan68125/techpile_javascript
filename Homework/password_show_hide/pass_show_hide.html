@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+body{background:orange;display:flex;justify-content:center;align-items:center}
+*{font-size:1.3rem}
+#box{
+background:white;
+height:50px;
+width:350px;
+display:flex;
+border-radius:5px;
+}
+input{
+width:90%;
+height:99%;
+border:none;
+border-radius:5px 0px 0px 5px;
+outline:0;
+margin-left:2%;
+}
+#in:focus
+{
+border:none;
+}
+#button{
+width:10%;
+height:80%;
+margin-top:11px
+}img{height:25px}
+</style>
+</head>
+<body>
+<div id="box">
+<input id="in" type="password" placeholder="Password"/>
+<div onclick="demo()" id="button"><img src="images/pass_hide.png"/></div>
+</div>
+<script src="pass_show_hide.js"></script>
+</body>
+</html>
