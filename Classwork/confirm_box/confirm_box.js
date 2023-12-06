@@ -16,3 +16,14 @@ function confirm_box(){
         paragraph.style.transition = "all 2s"
     }
 }
+
+//open the website using a confirm box 
+function open_website_confirmbox(){
+    var x = window.confirm("Are you sure you want to open stackoverflow website")
+    if(x == true){
+        location = "https://stackoverflow.com/questions/7882356/javascript-get-img-src-and-set-as-variable#:~:text=getElementById(%22foo%22).,getElementById(%22foo%22)."
+    }
+    else{
+        location = "#"
+    }
+}
