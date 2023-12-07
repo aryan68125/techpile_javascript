@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link href="../css/bootstrap/bootstrap.css" rel="stylesheet"/>
+        <script src="../js/custom/form_forget_pass.js"></script>
+    </head>
+    <body onload="on_page_load()">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 mx-auto">
+                    <div class="col-sm-4 mx-auto p-2 bg-info mt-3">
+                        <a href="#" class="btn btn-dark" onclick="on_page_load()">Register</a>
+                        <a href="#" class="btn btn-dark float-end" onclick="display_login()">Login</a>
+
+                        <!--Register form starts-->
+                        <p id="registration_form">
+                            Name<input type="text" class="form-control"/>
+                            Email<input type="email" class="form-control"/>
+                            Password<input type="password" class="form-control"/>
+                            Mobile<input type="number" class="form-control"/>
+                        </p>
+                        <!--Register form ends-->
+
+                        <!--Login form starts-->
+                        <p id="login_form">
+                            username<input type="text" class="form-control"/>
+                            password<input type="password" class="form-control"/> 
+                            <input type="submit" class="btn btn-dark" value="Login"/>
+                            <a href="#" onclick="display_forgot_password()">Forgot password?</a>                          
+                        </p>
+                        <!--Login form ends-->
+
+                        <!--forgot password starts-->
+                        <p id="forgot_password_form">
+                            <input type="text" class="form-control"/>
+                            <input type="submit" class="btn btn-dark mt-2" value="sent OPT"/>
+                        </p>
+                        <!--forgot password ends-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
