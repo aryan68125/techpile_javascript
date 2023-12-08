@@ -17,3 +17,4 @@ function image_array(){
         i=0;
     }
 }
+// window.setInterval(image_array(),3000);
