@@ -16,7 +16,7 @@ var studentInfo = ["Rollex", "Bullet", "Ballistic", "Leo"];
 //   }
 
 // for ..in studentInfo
-for(var x in studentInfo){
-    console.log(studentInfo[x]);
-    alert(studentInfo[x])
-}
+// for(var x in studentInfo){
+//     console.log(studentInfo[x]);
+//     alert(studentInfo[x])
+// }
