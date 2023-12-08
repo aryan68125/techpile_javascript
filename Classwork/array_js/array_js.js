@@ -47,16 +47,25 @@ var studentInfo = ["Rollex", "Bullet", "Ballistic", "Leo"];
 // }
 
 //to print the output of the array using innerhtml in paragraph tag
-var programming = ["HTML", "CSS", "JS", "Jquery", "Bootstrap"];
-var first_div = document.querySelector(".for_in");
-var for_in_messege = document.getElementById("array_output_for_in");
-var second_div = document.querySelector(".for_of");
-var for_of_messege = document.getElementById("array_output_for_of");
-for (var i in programming){
-    for_in_messege.innerHTML = programming[i];
-}
-var count = 0
-for (var i of programming){
-    for_of_messege.innerHTML = i;
-    count++;
+function loop(){
+    var programming = ["HTML", "CSS", "JS", "Jquery", "Bootstrap"];
+    var first_div = document.querySelector(".for_in");
+    var for_in_messege = document.getElementById("array_output_for_in");
+    var second_div = document.querySelector(".for_of");
+    var for_of_messege = document.getElementById("array_output_for_of");
+    var result_for_in = "";
+    for (var i in programming){
+        result_for_in+=`${programming[i]} is in index ${i} <br/>`;
+        // for_in_messege.innerHTML = programming[i];
+    }
+    for_in_messege.innerHTML = result_for_in
+
+    var result_for_of = "";
+    var count = 0
+    for (var i of programming){
+        result_for_of+= `${i} is in index ${count} <br/>`
+        count++;
+    }
+    for_of_messege.innerHTML = result_for_of;
+
 }
