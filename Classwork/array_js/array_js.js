@@ -20,3 +20,43 @@ var studentInfo = ["Rollex", "Bullet", "Ballistic", "Leo"];
 //     console.log(studentInfo[x]);
 //     alert(studentInfo[x])
 // }
+
+// var x = "Techpile";
+// for (var i of x){
+//     alert(i);
+// }
+
+    
+//example of for loop using document.write function
+// var programming = ["HTML", "CSS", "JS", "Jquery", "Bootstrap"];
+// var first_div = document.querySelector(".for_in");
+// var for_in_messege = document.getElementById("array_output_for_in");
+// var second_div = document.querySelector(".for_of");
+// var for_of_messege = document.getElementById("array_output_for_of");
+// for (var i in programming){
+//     document.write(`${programming[i]} is in index ${i} <br/>`);
+// }
+// var count = 0
+// for (var i of programming){
+//     document.write(`${i} is in index ${count} <br/>`);
+//     count++;
+// }
+// for (var i=0;i<programming.length;i++)
+// {
+//     document.write(`${programming[i]} is in index ${i} <br/>`);
+// }
+
+//to print the output of the array using innerhtml in paragraph tag
+var programming = ["HTML", "CSS", "JS", "Jquery", "Bootstrap"];
+var first_div = document.querySelector(".for_in");
+var for_in_messege = document.getElementById("array_output_for_in");
+var second_div = document.querySelector(".for_of");
+var for_of_messege = document.getElementById("array_output_for_of");
+for (var i in programming){
+    for_in_messege.innerHTML = programming[i];
+}
+var count = 0
+for (var i of programming){
+    for_of_messege.innerHTML = i;
+    count++;
+}
