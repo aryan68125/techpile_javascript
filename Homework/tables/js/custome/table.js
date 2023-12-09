@@ -1,5 +1,38 @@
 
-var row_index = 1;
+// var row_index = 1;
+// function get_set_table(){
+// var table_row_starts = "<tr>";
+// var table_row_ends = "</tr>";
+
+// //get the table body
+// var table_body = document.getElementById("table_body");
+// //call all the input boxes
+// var student_name = document.getElementById("student_name");
+// var student_email = document.getElementById("student_name");
+// var student_phone = document.getElementById("student_phone");
+// var student_father_name = document.getElementById("student_father_name");
+// var student_father_contact = document.getElementById("student_father_contact");
+// var student_address = document.getElementById("student_address");
+// //set the values inside these input boxes to the table data tag
+// var table_data_items_holder = table_row_starts;
+// table_data_items_holder += `<th scope="row">${row_index}</th>`;
+// table_data_items_holder +=`<td> ${student_name.value} </td>`;
+// table_data_items_holder +=`<td> ${student_email.value} </td>`;
+// table_data_items_holder +=`<td> ${student_phone.value} </td>`;
+// table_data_items_holder +=`<td> ${student_father_name.value} </td>`;
+// table_data_items_holder +=`<td> ${student_father_contact.value} </td>`;
+// table_data_items_holder +=`<td> ${student_address.value} </td>`;
+// table_data_items_holder += table_row_ends;
+// //save table_data_items_holder in an array
+// var items_holder = [];
+// items_holder[items_holder.length]
+// // items_holder.push( table_data_items_holder );
+// for (i of items_holder){
+//     table_body.innerHTML = items_holder;
+// }
+// row_index++;
+// }
+
 function get_set_table(){
 //call all the input boxes
 var student_name = document.getElementById("student_name");
