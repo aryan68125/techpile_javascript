@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Student Information</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Student Information</h2>
+
+    <form id="studentForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input type="tel" class="form-control" id="contact" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="addStudent()">Add Student</button>
+    </form>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Student information will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function addStudent() {
+        // Get input values
+        var name = document.getElementById('name').value;
+        var contact = document.getElementById('contact').value;
+        var email = document.getElementById('email').value;
+
+        // Create a new row for the table
+        var table = document.getElementById('studentTableBody');
+        var newRow = table.insertRow(table.rows.length);
+
+        // Insert data into the row
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = name;
+        cell2.innerHTML = contact;
+        cell3.innerHTML = email;
+
+        // Clear input fields
+        document.getElementById('name').value = '';
+        document.getElementById('contact').value = '';
+        document.getElementById('email').value = '';
+    }
+</script>
+
+</body>
+</html>

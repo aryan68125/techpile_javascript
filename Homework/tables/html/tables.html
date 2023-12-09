@@ -1,0 +1,86 @@
+<head>
+    <head>
+        <link href = "../css/bootstrap/bootstrap.css" rel="stylesheet"/>
+        <link href="../css/fontawesome/all.css" rel="stylesheet"/>
+
+        <script src="../js/bootstrap/bootstrap.js"></script>
+        <script src="../js/fontawesome/all.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container text-center">
+                <h1>Tables</h1>
+            </div>
+            <!--input box starts-->
+            <div class="container border border-dark">
+                <h3>Input box</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <label for="student_name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="student_name" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <label for="student_email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="student_email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <label for="student_phone" class="form-label">Contact:</label>
+                            <input type="text" class="form-control" id="student_phone" placeholder="Enter your contact number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <label for="student_father_name" class="form-label">Father's name:</label>
+                            <input type="text" class="form-control" id="student_father_name" placeholder="Enter your Father's name">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <label for="student_father_contact" class="form-label">Father's contact:</label>
+                            <input type="text" class="form-control" id="student_father_contact" placeholder="Enter your Father's contact">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="student_address" class="form-label">Address:</label>
+                        <textarea class="form-control" id="student_address" rows="3" placeholder="Enter your home address"></textarea>
+                      </div>
+                </div>
+                <div class="row p-3">
+                    <button type="button" class="btn btn-success mt-3 mb-3" onclick="get_set_table()">Submit information</button>
+                </div>
+            </div>
+            <!--input box ends-->
+
+            <!--table starts-->
+            <div class="container border border-dark mt-3">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Student's Name</th>
+                        <th scope="col">Student's Email</th>
+                        <th scope="col">Student's Contact</th>
+                        <th scope="col">Father's Name</th>
+                        <th scope="col">Father's Contact</th>
+                        <th scope="col">Home address</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <!--Dynamically assign values using js-->
+                    </tbody>
+                  </table>
+            </div>
+            <!--table ends-->
+
+            <script src="../js/custome/table.js"></script>
+        </div>
+    </body>
+</head>
